@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyWebsite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=360, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/refnaldy.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/fontawesome-all.js"></script>
+    <script src="./assets/js/refnaldy.js"></script>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif;
+        }
+        
+        body,
+        html {
+            height: 100%;
+            color: rgb(65, 55, 126);
+            line-height: 1.8;
+        }
+        /* Create a Parallax Effect */
+        
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* @import url('https://fonts.googleapis.com/css?family=Lobster'); */
+        /* First image (Logo. Full height) */
+        
+        .bgimg-1 {
+            background-image: url('./assets/photo/Polsri1.jpg');
+            min-height: 100%;
+        }
+        /* Second image (Portfolio) */
+        
+        .bgimg-2 {
+            background-image: url("./assets/photo/irvan-minum.jpg");
+            min-height: 450px;
+        }
+        /* Third image (Contact) */
+        
+        .bgimg-3 {
+            background-image: url("./assets/photo/irvan-duduk.jpg");
+            min-height: 400px;
+        }
+        
+        .ref-wide {
+            letter-spacing: 10px;
+        }
+        
+        .ref-hover-opacity {
+            cursor: pointer;
+        }
+        /* Turn off parallax scrolling for tablets and phones */
+        
+        @media only screen and (max-width: 700px) {}
+/*         
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+        } */
+    </style>
+
+
+
+
+
+
+    <body>
+        <!-- HAYO LOHHH
+            MAU NGINTIP APA HAYOOOOO-->
+
+        <!-- Navbar (sit on top) -->
+        <div class="ref-top">
+            <div class="ref-bar" id="myNavbar">
+                <a class="ref-bar-item ref-button ref-hover-black ref-hide-medium ref-hide-large ref-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#home" class="ref-bar-item ref-button">HOME</a>
+                <a href="#portofolio" class="ref-bar-item ref-button ref-hide-small"><i class="fas fa-user-secret"></i>  PORTFOLIO</a>
+                <a href="#laporan" class="ref-bar-item ref-button ref-hide-small"><i class="far fa-folder-open"></i> LAPORAN</a>
+                <a href="#contact" class="ref-bar-item ref-button ref-hide-small"><i class="fas fa-user-circle"></i> CONTACT</a>
+                <a href="#" class="ref-bar-item ref-button ref-hide-small ref-right ref-hover-border-light-grey">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="ref-bar-block ref-dark-grey ref-hide ref-hide-large ref-hide-medium">
+                <a href="#portofolio" class="ref-bar-item ref-button ref-padding-small" onclick="toggleFunction()">PORTFOLIO</a>
+                <a href="#laporan" class="ref-bar-item ref-button ref-padding-small" onclick="toggleFunction()">LAPORAN</a>
+                <a href="#contact" class="ref-bar-item ref-button ref-padding-small" onclick="toggleFunction()">CONTACT</a>
+                <a href="#" class="ref-bar-item ref-button ref-padding-small">SEARCH</a>
+            </div>
+        </div>
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 ref-display-container ref-opacity-min" id="home">
+            <div class="ref-display-middle" style="white-space: nowrap;">
+                <span class="ref-center ref-padding-large ref-blue ref-largex ref-wide  ref-animate-fading">WELCOME <span class="ref-hide-small">TO  MY WEBSITE</span><i class="fab fa-angellist"></i></span>
+            </div>
+        </div>
+
+        <!-- Second Parallax Image -->
+        <div class="bgimg-2 ref-display-container ref-opacity-min " id="portofolio">
+            <div class="ref-display-middle ">
+                <marquee behavior="alternate " direction="left "><span class="ref-xxlarge ref-text-white ref-wide ">PORTFOLIO</span></marquee>
+            </div>
+        </div>
+      
+        <!-- Portofolio in Here -->
+        <div>
+            <p class="ref-panel ref-pale-blue ref-leftbar ref-border-dark-grey ref-padding">"Tak Kenal Maka Tak Tun Tuang"</p>
+            <div class="ref-card ref-hover-shadow ref-light-blue">
+                <header class="ref-hover-border-amber">
+                    <h4 class="ref-wide ref-padding">ABOUT ME</h4>
+                </header>
+                <div class="ref-container ref-row">
+                    <div class="ref-container ref-text-shadow ref-half">
+                        <p>Nama Saya Muhammad Irvan Refnaldy</p>
+                        <p>Tempat Lahir di Prabumulih pada tanggal 2 September tahun 1998
+                            <p>saat ini saya kuliah di Politeknik Negeri Sriwijaya </p>
+                        </p>
+                    </div>
+                    <div class="ref-container ref-half">
+                        <p>
+                            <h4 class="ref-wide">Latar Belakang</h4>
+                        </p>
+                        <p class="ref-padding">Saya adalah amateur Investor,amateur Trader, amateur programmer, Keseharianku melihat market yang sangat fluktuatif, saat ini saya berkecimpung di cryptocurency, dan sebelumnya saya biasa investasi ataupun trading di Stock atau
+                            saham.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <footer class="ref-container">
+
+            </footer>
+        </div>
+
+
+
+        <!-- Laporan in Here -->
+        <header class="ref-container ref-blue-grey" id="laporan">
+            <div class="ref-container ref-center" style="white-space: nowrap;">
+                <h1 class="ref-wide"> LAPORAN</h1>
+                <p class="ref-left">
+                    <h5>Program Jaringan Komputer</h5>
+                    <br><br>
+                </p>
+                <button onclick="document.getElementById('id01').style.display='block'" class="ref-btn ref-grey ref-left">LIHAT LAPORAN</button>
+                <div class="ref-padding-large ref-left">
+                    <p>
+                        <br><br><br><br>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+
+        <div id="id01" class="ref-modal ref-animate-zoom">
+            <div class="ref-modal-content ref-card-4">
+                <header class="ref-container ref-light-blue">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="ref-button ref-display-topright">&times;</span>
+                    <h2>Silahkan Klik Gambar..</h2>
+                </header>
+                <div class="ref-container">
+                    <div class="ref-row ref-padding-large">
+                        <div class="ref-third ref-padding-small ref-card ref-hover-shadow">
+                            <a href="https://drive.google.com/open?id=1EHAZK6jeQ4UmMTNb1Tg3lVP22ApFEHDp" target="_blank"> <img src="./assets/photo/Laporan/lap1.PNG" class="ref-image ref-opacity ref-hover-opacity-off" alt="laporan1" style="width:100%">
+                            </a>
+                            <div class="ref-row ref-container ref-disabled">
+                                <i class="fas fa-eye"></i> Ip-Address
+                            </div>
+                        </div>
+                        <div class="ref-third ref-padding-small ref-card ref-hover-shadow">
+                            <a href="https://drive.google.com/open?id=1DstiAZpKTsGdaTYRUMeBrkKAsdXaR04p" target="_blank"> <img src="./assets/photo/Laporan/lap2.PNG" class="ref-image ref-opacity ref-hover-opacity-off" alt="laporan2" style="width:100%">
+                            </a>
+                            <div class="ref-row ref-container ref-disabled ref-responsive">
+                                <i class="fas fa-eye"></i> Display Net
+                            </div>
+                        </div>
+                        <div class="ref-third ref-padding-small ref-card ref-hover-shadow">
+                            <a href="https://drive.google.com/open?id=1yFV99fyNKJ6HrqQ1T-tlp-biXZFiRhfU" target="_blank"> <img src="./assets/photo/Laporan/lap3.PNG" class="ref-image ref-opacity ref-hover-opacity-off" alt="laporan3" style="width:100%">
+                            </a>
+                            <div class="ref-row ref-container ref-disabled">
+                                <i class="fas fa-eye"></i> Info Server
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ref-row-padding ref-padding-large">
+                        <div class="ref-third ref-padding-small ref-card ref-hover-shadow">
+                            <a href="https://drive.google.com/open?id=1GBOg41kbWztL0tYC3hPwozprzC4qTvWw" target="_blank"> <img src="./assets/photo/Laporan/lap4.PNG" class="ref-image ref-opacity ref-hover-opacity-off" alt="laporan4" style="width:100%">
+                            </a>
+                            <div class="ref-row ref-container ref-disabled">
+                                <i class="fas fa-eye"></i> Info Client
+                            </div>
+                        </div>
+                        <div class="ref-third ref-padding-small ref-card ref-hover-shadow">
+                            <a href="https://drive.google.com/open?id=12GafKXeFqpyvD5OGwFLqFr7_e5gfNMln" target="_blank"> <img src="./assets/photo/Laporan/lap5.PNG" class="ref-image ref-opacity ref-hover-opacity-off" alt="laporan5" style="width:100%">
+                            </a>
+                            <div class="ref-row ref-container ref-disabled">
+                                <i class="fas fa-eye"></i>Chat Server
+                            </div>
+                        </div>
+                        <div class="ref-third ref-padding-small ref-card ref-hover-shadow ">
+                            <a href="https://drive.google.com/open?id=107UotTWN3WWir0GVcJ5DSiiMQwr-2TEE" target="_blank"> <img src="./assets/photo/Laporan/lap6.PNG" class="ref-image ref-opacity ref-hover-opacity-off" alt="laporan6" style="width:100%">
+                            </a>
+                            <div class="ref-row ref-container ref-disabled">
+                                <i class="fas fa-eye"></i> Chat Client
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ref-row ref-padding-large">
+                        <div class="ref-third ref-padding-small ref-card ref-hover-shadow">
+                            <a href="https://drive.google.com/open?id=16O0iHaD9myRoveVx78C8MbYBqTKp9-YJ" target="_blank">
+                                <img src="./assets/photo/Laporan/lap7.PNG" class="ref-image ref-opacity ref-hover-opacity-off" alt="laporan7" style="width:100%">
+                            </a>
+                            <div class="ref-row ref-container ref-disabled">
+                                <i class="fas fa-eye"></i> Search Engine Old
+                            </div>
+                        </div>
+                        <div class="ref-third ref-padding-small ref-card ref-hover-shadow">
+                            <a href="https://drive.google.com/open?id=1ZmazIdTngfUWFrNDcftDWYJ9A4m8uei4" target="_blank">
+                                <img src="./assets/photo/Laporan/lap7.PNG" class="ref-image ref-opacity ref-hover-opacity-off" alt="laporan7" style="width:100%">
+                            </a>
+                            <div class="ref-row ref-container ref-disabled ref-responsive">
+                                <i class="fas fa-eye"></i> Search Engine New
+                            </div>
+                        </div>
+                        <div class="ref-third ref-padding-small ref-card ref-hover-shadow">
+                            <a href="https://drive.google.com/open?id=1jpbrNXwt5Vc3P7r3ufcr2AVv_bFcrtFa" target="_blank">
+                                <img src="./assets/photo/Laporan/lap8.PNG" class="ref-image ref-opacity ref-hover-opacity-off" alt="laporan8" style="width:100%">
+                            </a>
+                            <div class="ref-row ref-container ref-disabled">
+                                <i class="fas fa-eye"></i> Menu Jaringan
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="ref-container ref-ligh-grey">
+                    <p></p>
+                </footer>
+            </div>
+        </div>
+        </div>
+
+        <!-- Third Parallax Image -->
+        <div class="bgimg-3 ref-display-container ref-image ref-opacity-min ">
+            <div class="ref-display-middle " id="contact">
+                <span class="ref-xxlarge ref-text-blue ref-animate-opacity ref-wide ">CONTACT</span>
+            </div>
+        </div>
+        <div class="ref-container" style="padding-left :0; padding-right: 0 ;">
+            <div class="" style="display : flex;" id="ref-child1">
+                <div id="ref-i-child1" class="" style="flex-grow: 1; padding : 5px;">
+                    <a href="https://zzcomzz.github.io/biodata/">
+                        <img src="./assets/photo/webV1.PNG" style="display:block ; width:100%; height: 200px;" alt="webV1">
+                    </a>
+                    <div class="ref-center" style="background: darkgrey; color : white;">
+                        My WEBSITE V1.02 <i class="fab fa-github" style="color:black;"></i>
+                        <div class="ref-small"> Let's See from Github
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ref-i-child2" class="" style="flex-grow: 1; margin : 5px; background: darkgrey;">
+                    <div class="ref-half ref-center">
+                        <p>
+                            <h3 class="ref-badge-judul">Profile and Photo</h3>
+                        </p>
+
+                        <h1>
+                            <a href="https://www.instagram.com/irvref02" class="ref-badge-primary ref-social"> <i class="fab fa-instagram"></i> Instagram</a>
+                        </h1>
+
+
+                        <h1>
+                            <a href="https://www.linkedin.com/in/zzcomzz" class="ref-badge-secondary ref-social ">Linked <i class="fab fa-linkedin"></i></a>
+                        </h1>
+
+                    </div>
+                    <div class="ref-half ref-center">
+                        <p>
+                            <h4 class="ref-badge-judul">Chat</h4>
+                        </p>
+                        <p>
+                            <h1>
+                                <a href="https://t.me/zzCOMzz" class="ref-badge-telegram ref-social"><i class="fab fa-telegram-plane"></i> Telegram</a>
+                            </h1>
+                        </p>
+                        <p>
+                            <h1>
+                                <a href="http://line.me/ti/p/wen6NYoPSM" class="ref-badge-line ref-social "><i class="fab fa-line"></i> LINE</a>
+                            </h1>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="" style="background-color: lightslategrey; color : White; padding : 15px; text-align : center ;">
+            <div class="">
+                <span style="font-family: 'Lobster', cursive;">Made With</span>
+                <i class="fas fa-heart" style="color: red ;"></i>
+            </div>
+        </footer>
+
+
+    </body>
+
+
+</html>
