@@ -1,0 +1,91 @@
+
+#HCB_comment_box{
+  padding: 20px;
+  color: #000;
+  background:#87CEEB;
+}
+#HCB_comment_box textarea,#HCB_comment_box input[type=text]{
+  font-size: 12pt;
+  padding: 5px 0;
+  margin-bottom: 15px;
+  border: none;
+  background: transparent;
+  transition: all 500ms ease-in-out;
+}
+#HCB_comment_box textarea:focus,#HCB_comment_box input[type=text]:focus{
+  box-shadow: 5px 5px 5px black
+}
+#HCB_comment_box .hcb-wrapper-half{
+  display: block;
+  width: 50%;
+  float: left;
+}
+#HCB_comment_box .hcb-wrapper{
+  clear:both
+}
+#HCB_comment_box input.text{
+  display: block;
+  width: 95%
+}
+#HCB_comment_box input.submit,#HCB_comment_form_box a.btn{
+  background: none;
+  margin: 0 5px 0 0;
+  display: inline-block;
+  transition: 250ms;
+  font-weight: bolder;
+  padding: 5px;
+  color: #000000;
+  border: solid #000000;
+  border-radius: 5px;
+  transition: all 500ms ease-in;
+}
+#HCB_comment_box input.submit:hover,#HCB_comment_form_box a.btn:hover{
+  color: #FFFFFF;
+  border: solid #000000;
+  background: #000000;
+  cursor: pointer;
+}
+#HCB_comment_box div.comment{
+  color: #000;
+  background: #D5D7DB;
+  border: 3px solid #000;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 500ms ease-in-out;
+}
+#HCB_comment_box div.comment:hover{
+  transform: scale(1.01);
+}
+#HCB_comment_box .comment .likes{
+  color: #6E0DD0;
+}
+#HCB_comment_box .hcb-link{
+  color:#0088af;
+  text-decoration:none;
+}
+#HCB_comment_box h3,.hcb-comment-tb a:first-child,.home-desc,.hcb-icon {
+  display: none !important;
+}
+.hcb-comment-tb a{
+  color: #000;
+}
+.hcb-comment-tb a:hover{
+  text-decoration: underline;
+}
+.author-name{
+  color : #6E0DD0;
+}
+#HCB_comment_box input[type=text]{
+  width: 200px;
+  border-bottom: solid 2px #000;
+  border-left: solid 2px #000;
+}
+#HCB_comment_box textarea{
+  height: 80px;
+  border-bottom: solid 4px #000;
+  resize: none;
+}
+#HCB_comment_form_box{
+  padding: 10px 7px;
+}
